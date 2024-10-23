@@ -35,7 +35,7 @@ var currentSceneRef
 
 func LoadScene(num):
   if currentSceneRef:
-    currentSceneRef.queue_free()
+	currentSceneRef.queue_free()
   var scenePath = path + sceneList[num] + ".tscn"
   var scene = load(scenePath).instance()
   add_child(scene)
@@ -66,10 +66,10 @@ func _unhandled_input(event):
 #      elif event.pressed:
 #        LoadNextScene()
   if event is InputEventMouseButton:
-    if event.pressed:
-      var uv = event.position / get_viewport_rect().size
-      print(uv)
-      if uv.x < 0.15 || event.button_index == BUTTON_RIGHT:
-        LoadPrevScene()
-      else:
-        LoadNextScene()
+	if event.pressed:
+	  var uv = event.position / get_viewport_rect().size
+	  print(uv)
+	  if uv.x < 0.15 || event.button_index == BUTTON_RIGHT:
+		LoadPrevScene()
+	  else:
+		LoadNextScene()
