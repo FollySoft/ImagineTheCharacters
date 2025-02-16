@@ -59,7 +59,7 @@ position = Vector2( 419, 509 )
 texture = ExtResource( 4 )
 
 [node name="Arbusto3" type="Sprite" parent="Arbustos"]
-position = Vector2( 855, 508 )
+position = Vector2( 855, 509 )
 texture = ExtResource( 4 )
 
 [node name="Arbusto4" type="Sprite" parent="Arbustos"]
@@ -71,7 +71,7 @@ position = Vector2( 96, 486 )
 texture = ExtResource( 5 )
 
 [node name="Tartaruga" type="Sprite" parent="."]
-position = Vector2( 491, 471 )
+position = Vector2( 491, 473 )
 texture = ExtResource( 6 )
 offset = Vector2( 16, 11 )
 
